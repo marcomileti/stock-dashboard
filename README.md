@@ -17,7 +17,7 @@ SETUP INSTRUCTIONS
 2. `npm install` in a new terminal
 
 BEYOND CORE REQUIREMENTS
-- .env and .gitignore files to ensure private Finnhub API key security when fetching raw data from Finnhub
+- The Finnhub API key is stored in a .env file to avoid committing it to GitHub. Since this is a client-side app, the key is still exposed in the browser. For full security, API requests should go through a server or serverless function.
 - Stock search feature that automatically adds a row the table if the entered stock is valid
 - Unique error handling for bad inputs, complete with a frontend notification about the specific kind of error
 - Loading screen with animation done entirely in Tailwind 
